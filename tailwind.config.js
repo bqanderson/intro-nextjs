@@ -31,6 +31,17 @@ module.exports = {
       semibold: 'var(--rec-semibold-wght)',
       bold: 'var(--rec-heavy-wght)',
     },
+    spacing: {
+      xs: '8px',
+      sm: '16px',
+      md: '24px',
+      lg: '40px',
+      xl: '64px',
+      '2xl': '104px',
+      '3xl': '168px',
+      '4xl': '272px',
+      '5xl': '440px',
+    },
   },
   plugins: [],
 }

@@ -28,12 +28,13 @@ export default function RootLayout({
 
   return (
     <html lang="en">
-      <body className={recursive.variable}>
-        <header>
+      <body className={`${recursive.variable} bg-slate-200`}>
+        <header className='flex justify-between items-center h-xl py-xs px-lg bg-slate-300 border border-slate-400'>
+          <h1 className='text-lg'>B / Q / A</h1>
           <nav>
-            <ul className='flex items-center'>
+            <ul className='flex items-center divide-x divide-slate-400'>
               { links.map( link => (
-                <li key={ link.href }>
+                <li className='px-xs transition-all hover:link-hover' key={ link.href }>
                   <Link href={ link.href }>{ link.label }</Link>
                 </li>
               )) }

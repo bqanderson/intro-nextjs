@@ -64,3 +64,14 @@ body {
   var(--rec-italic-slnt),
   var(--rec-base-crsv);
 }
+
+@layer utilities {
+  .link-hover {
+    font-variation-settings:
+    var(--rec-base-mono),
+    var(--rec-casual-casl),
+    var(--rec-italic-slnt),
+    var(--rec-base-crsv);
+    font-weight: 600;
+  }
+}
