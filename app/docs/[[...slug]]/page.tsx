@@ -1,5 +1,3 @@
-import React from 'react'
-
 const DocsSlugPage = ({ params }: any) => {
   return (
     <div>
