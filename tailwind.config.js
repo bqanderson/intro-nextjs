@@ -6,12 +6,30 @@ module.exports = {
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
-    extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
-      },
+    extend: {},
+    fontFamily: {
+      sans: [
+        'var(--vf-recursive)',
+        {
+          fontFeatureSettings: "'dlig', 'titl', 'ss09', 'ss11'",
+          fontVariationSettings: "'MONO' 0.001, 'CASL' 0.001",
+        },
+      ],
+    },
+    fontSize: {
+      sm: ['10px', '16px'],
+      base: ['16px', '24px'],
+      lg: ['24px', '40px'],
+      xl: ['40px', '48px'],
+      '2xl': ['64px', '72px'],
+      '3xl': ['104px', '120px'],
+      '4xl': ['168px', '200px'],
+      '5xl': ['272px', '320px'],
+    },
+    fontWeight: {
+      normal: 'var(--rec-normal-wght)',
+      semibold: 'var(--rec-semibold-wght)',
+      bold: 'var(--rec-heavy-wght)',
     },
   },
   plugins: [],

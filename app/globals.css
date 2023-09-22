@@ -6,6 +6,18 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  /* Recursive Variable Font - base settings */
+  --rec-base-mono: "MONO" 0;
+  --rec-base-casl: "CASL" 0;
+  --rec-base-slnt: "slnt" 0;
+  --rec-base-crsv: "CRSV" 1;
+  /* Recursive Variable Font - weight settings */
+  --rec-normal-wght: 350;
+  --rec-semibold-wght: 600;
+  --rec-heavy-wght: 900;
+  /* Recursive Variable Font - variant settings */
+  --rec-italic-slnt: "slnt" -12;
+  --rec-casual-casl: "CASL" 0.75;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -18,10 +30,37 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  font-family: var(--vf-recursive);
+  font-weight: 350;
+  font-variant-numeric: proportional-nums slashed-zero;
+  font-variation-settings:
+    var(--rec-base-mono),
+    var(--rec-base-casl),
+    var(--rec-base-slnt),
+    var(--rec-base-crsv);
+}
+
+.italic {
+  font-style: normal;
+  font-variation-settings: 
+  var(--rec-base-mono),
+  var(--rec-base-casl),
+  var(--rec-italic-slnt),
+  var(--rec-base-crsv);
+}
+
+.casual {
+  font-variation-settings:
+  var(--rec-base-mono),
+  var(--rec-casual-casl),
+  var(--rec-base-slnt),
+  var(--rec-base-crsv);
+}
+
+.casual-italic {
+  font-variation-settings:
+  var(--rec-base-mono),
+  var(--rec-casual-casl),
+  var(--rec-italic-slnt),
+  var(--rec-base-crsv);
 }
