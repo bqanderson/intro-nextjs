@@ -29,21 +29,23 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${recursive.variable} bg-slate-200`}>
-        <header className='flex justify-between items-center h-xl py-xs px-lg bg-slate-300 border border-slate-400'>
-          <h1 className='text-lg'>B / Q / A</h1>
+        <header className='flex justify-between items-center h-xl py-xs px-lg bg-slate-200 border border-slate-300'>
+          <h1 className='text-lg text-slate-700'>
+            Todo List <span className='text-base text-slate-400'>v 1.0.0</span>
+          </h1>
           <nav>
-            <ul className='flex items-center divide-x divide-slate-400'>
+            <ul className='flex items-center divide-x divide-slate-500'>
               { links.map( link => (
-                <li className='px-xs transition-all hover:link-hover' key={ link.href }>
+                <li className='text-slate-700 px-xs transition-all hover:link-hover' key={ link.href }>
                   <Link href={ link.href }>{ link.label }</Link>
                 </li>
               )) }
             </ul>
           </nav>
         </header>
-        <div>
+        <section className='px-2xl py-md'>
           { children }
-        </div>
+        </section>
       </body>
     </html>
   )

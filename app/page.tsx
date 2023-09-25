@@ -1,7 +1,7 @@
 export default function Home() {
   return (
     <div>
-      <h1 className='text-lg font-semibold'>BQA -vs- bqa v0.1.123581321</h1>
+      <h1 className='text-lg font-semibold text-slate-700'>My Todo List App v1.0.0</h1>
     </div>
   )
 }

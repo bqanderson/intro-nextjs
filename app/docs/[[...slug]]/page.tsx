@@ -1,8 +1,8 @@
 const DocsSlugPage = ({ params }: any) => {
   return (
-    <div>
-      <h1 className='text-lg font-semibold'>{ params.slug } Documentation</h1>
-    </div>
+    <h1 className='text-lg font-semibold text-slate-700 capitalize'>
+      { params.slug } Documentation
+    </h1>
   )
 }
 
