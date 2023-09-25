@@ -1,6 +1,8 @@
-const Todo = () => {
+import { TodoItem } from '@/utils/todos.model'
+
+const Todo = ( todo: TodoItem ) => {
   return (
-    <div>Todo</div>
+    <div>{ todo.content }</div>
   )
 }
 
