@@ -32,6 +32,7 @@ module.exports = {
       bold: 'var(--rec-heavy-wght)',
     },
     spacing: {
+      '2xs': '4px',
       xs: '8px',
       sm: '16px',
       md: '24px',

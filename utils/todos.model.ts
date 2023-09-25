@@ -3,7 +3,7 @@ import { randomUUID } from 'crypto'
 export class TodoItem {
   id: string
   createdAt: Date
-  content?: string
+  content?: string | null
   isCompleted: boolean
 
   constructor( todo: TodoItem ) {
