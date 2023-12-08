@@ -4,6 +4,7 @@ module.exports = {
     './pages/**/*.{js,ts,jsx,tsx,mdx}',
     './components/**/*.{js,ts,jsx,tsx,mdx}',
     './app/**/*.{js,ts,jsx,tsx,mdx}',
+    'node_modules/preline/dist/*.js',
   ],
   theme: {
     extend: {},
@@ -44,5 +45,8 @@ module.exports = {
       '5xl': '440px',
     },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/forms'),
+    require('preline/plugin')
+  ],
 }

@@ -1,4 +1,4 @@
-import NewTodoForm from '@/components/NewTodoForm'
+import NewTodoForm from '@/app/components/NewTodoForm'
 import { Fragment } from 'react'
 
 const DashboardLayout = ({ children }: { children: React.ReactNode }) => {

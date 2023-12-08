@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import './globals.css'
 import localFont from 'next/font/local'
+import PrelineScript from './components/PrelineScript'
 
 const recursive = localFont({
   src: './assets/fonts/Recursive_VF_1.085.woff2',
@@ -28,7 +29,7 @@ export default function RootLayout({
 
   return (
     <html lang="en">
-      <body className={`${recursive.variable} bg-slate-200`}>
+      <body className={`${recursive.variable}`}>
         <header className='flex justify-between items-center h-xl py-xs px-lg bg-slate-200 border border-slate-300'>
           <h1 className='text-lg text-slate-700'>
             Todo List <span className='text-base text-slate-400'>v 1.0.0</span>
@@ -47,6 +48,7 @@ export default function RootLayout({
           { children }
         </section>
       </body>
+      <PrelineScript />
     </html>
   )
 }

@@ -1,7 +1,9 @@
-import TodoList from '@/components/TodoList'
-import db from '@/utils/db'
+import TodoList from '@/app/components/TodoList'
+import db from '@/app/utils/db'
+import { resolve } from 'path'
 
 const getTodoList = async () => {
+  await new Promise((resolve) => setTimeout(() => resolve('200'), 1000))
   const todoList = await db.todo.findMany({
     where: {},
     orderBy: {
